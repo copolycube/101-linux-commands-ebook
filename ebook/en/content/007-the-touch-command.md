@@ -22,38 +22,20 @@ touch File1_name File2_name File3_name
 
 #### Mandatory arguments to long options are mandatory for short options too.
 
-1.   -a     
->change only the access time
 
-2.  -c, --no-create
->do not create any files
-
-3. -d, --date=STRING
->parse STRING and use it instead of current time
-
-4. -f     
->(ignored)
-
-5. -h, --no-dereference
->affect each symbolic link instead of any referenced file (useful  only  on  systems that can change the timestamps of a symlink)
-
-6. -m     
->change only the modification time
-
-7. -r, --reference=FILE
->use this file's times instead of current time
-
-8. -t STAMP
->use [[CC]YY]MMDDhhmm[.ss] instead of current time
-
-9. --time=WORD
->change  the specified time: WORD is access, atime, or use: equivalent to -a WORD is modify or mtime: equivalent to -m
-
-10. --help 
->display this help and exit
-
-11. --version
->output version information and exit
+|**Short Flag**   |**Long Flag**   |**Description**   |
+|:---|:---|:---|
+| `-a` | |     change only the access time |
+|  `-c`| `--no-create` | do not create any files |
+| `-d` |`--date=STRING`| parse STRING and use it instead of current time|
+|`-f` | | (ignored) |
+|`-h` | `--no-dereference` |affect each symbolic link instead of any referenced file (useful  only  on  systems that can change the timestamps of a symlink) |
+|`-m` | | change only the modification time |
+|`-r`|  `--reference=FILE` | use this file's times instead of current time |
+|`-t STAMP` | | use [[CC]YY]MMDDhhmm[.ss] instead of current time |
+| ` `  | `--time=WORD` |change  the specified time: `WORD` is access, atime, or use: equivalent to `-a WORD` is modify or `mtime`: equivalent to `-m` |
+| ` ` | `--help` | display this help and exit |
+| ` ` | `--version` |output version information and exit|
 
 
-Note that the -d and -t options accept different time-date formats.
+Note that the `-d` and `-t` options accept different time-date formats.
